@@ -64,8 +64,73 @@
 # print("Worst day: $", worst_day_profits)
 # print("Total: $", total_profits)
 
-msg ='Welcome  to  Python  101: Split  and Join'
-csv = 'Eric,John,Michael,Terry,Graham'
-friends_list = ['Eric','John','Michael','Terry','Graham']
-print(msg.split())
-print(msg.split(' '), type(msg.split(' ')))
+# msg ='Welcome  to  Python  101: Split  and Join'
+# print(msg.split())
+# print(' '.join(msg.split()))
+#alternatively we could achieve the same results by:
+#print(msg.replace(' ', "")) #where you replace all space non-spaces
+# csv = 'Eric,John,Michael,Terry,Graham'
+# friends_list = ['Eric','John','Michael','Terry','Graham']
+#print(msg.split())
+#print(msg.split(' '), type(msg.split(','))) # the split needs to be a delimeter type
+# to join two lists together
+#print('-'.join(friends_list+friends_list))
+
+#Exercise 18: Split & Join
+# csv = 'Eric,John,Michael,Terry,Graham:TerryG;Brian'
+# friends_list = ['Exercise: fill me with names']
+# print(friends_list)
+
+# Lesson 19& 20: Tuples, Lists, Sets 
+# friends = ['John','Michael','Terry','Eric','Graham']
+# friends_tuple = ('John','Michael','Terry','Eric','Graham')
+# friends_set = {'John','Michael','Terry','Eric','Graham','Eric'}
+# my_friends_set = {'Reg','Loretta','Colin','Eric','Graham'}
+# print(friends[2:4])
+# print(friends_tuple[2:4]) #similar to lists output 
+# print(friends_set.intersection(my_friends_set)) #finds the intersection
+# print(friends_set.difference(my_friends_set))#finds the difference
+# print(friends_set.union(my_friends_set)) #finds the union between both sets
+
+
+# #Sets - blazingly fast unordered Lists 
+# #empty Lists
+# empty_list = []
+# empyt_list = list()
+
+# #empty Tuple
+# empty_tuple = ()
+# empty_tuple = tuple()
+
+# #empty Set
+# #empty_set = {} # this is wrong, this is a dictionary
+# empty_set = set()
+
+# #Sets - Exercise
+# friends = {'John','Michael','Terry','Eric','Graham'}
+# my_friends = {'Reg','Loretta','Colin','John','Graham'}
+# cars =['900','420','V70','911','996','V90','911','911','S','328','900']
+# #1. Check if ‘Eric’ and ‘John’ exist in friends
+# if "Eric" in friends: print(True)
+# if "John"  in friends: print(True)
+# #alternative:
+# print('Eric' in friends and 'John' in friends)
+# #2. combine or add the two sets - +
+# print(friends.union(my_friends))  
+# #3. Find names that are in both sets - &
+# print(friends.intersection(my_friends)) 
+# #4. find names that are only in friends - "-"
+# print(friends.difference(my_friends))
+# #5. Show only the names who only appear in one of the lists - ^
+# print(friends.symmetric_difference(my_friends))
+# print(friends ^ my_friends)
+# #6. Create a new cars-list without duplicates
+# cars_set = {'900','420','V70','911','996','V90','911','911','S','328','900'}
+# #alternatively 
+# cars_set = list(set(cars))
+# print(cars_set)
+
+
+# Lesson 23-27: Functions
+
+
