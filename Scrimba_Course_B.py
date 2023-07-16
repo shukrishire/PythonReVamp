@@ -133,4 +133,41 @@
 
 # Lesson 23-27: Functions
 
+# def greeting(name, age):
+#     name = name.capitalize()
+#     age = str(age)
+#     msg = "Hello " + name  +", you are "  +age + "!"
+#     return msg
+
+# greeting_func = greeting("brian", "32")
+# print(greeting_func)
+
+#f{} is a string literal ie this is a string variable 
+
+# def greeting(name, age, color):
+#     #print('Hello ' + name.capitalize() + ", you will be " + str(age+1) + " on your next birthday!")
+#    # print(f'Salam {name.capitalize()} , you will be {str(age+1)} on your next birthday!"')
+#     #print(f'aloha we hear you like the color {color.lower()}!')
+#     msg = f'aloha we hear you like the color {color.lower()}!'
+#     return msg
+# name = "Barbora"
+# age = 32
+# color = "pink"
+
+# print(greeting(name, int(age), color))
+
+
+def simple(x):
+    if x > 11 :
+        return "A"
+    elif x == 11:
+        return "B"
+    else:
+        return x
+
+    
+
+print(simple(5))
+print(simple(14))
+print(simple(11))
 
